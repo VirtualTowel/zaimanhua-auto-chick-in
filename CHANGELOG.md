@@ -5,6 +5,16 @@
 格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)，
 版本号遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [1.4.4] - 2026-01-14
+
+### Fixed
+
+- 修复抽奖任务按钮定位问题 (`src/lottery.py`)
+  - 添加切换到"活动介绍"标签页的逻辑，确保在正确页面执行任务
+  - 更新按钮选择器为 `.imgBoxP7 .btn1/btn2/btn3`
+  - 改用按钮文本判断任务状态（比 API 字段更可靠）
+  - 调整页面加载等待策略 (`domcontentloaded` + 5秒)
+
 ## [1.4.3] - 2026-01-13
 
 ### Added
